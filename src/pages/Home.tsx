@@ -43,11 +43,11 @@ const Home = () => {
       </section>
 
       {/* Quick Links Section */}
-      <section className="py-24 bg-background">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('quickLinks')}</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">{t('quickLinks')}</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               {t('quickLinksDesc')}
             </p>
           </div>
