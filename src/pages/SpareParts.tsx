@@ -67,28 +67,222 @@ const SpareParts = () => {
             {language === 'ar' ? 'قطع غيار مميزة' : 'Featured Parts'}
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[1, 2, 3].map((item) => (
-              <Card key={item} className="bg-card border-border overflow-hidden group">
-                <div className="aspect-square bg-muted relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/80 flex items-end justify-center p-6">
-                    <Button variant="secondary" className="opacity-0 group-hover:opacity-100 transition-opacity">
-                      {language === 'ar' ? 'طلب عرض سعر' : 'Request Quote'}
-                    </Button>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">
-                    {language === 'ar' ? `قطعة ${item}` : `Part ${item}`}
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    {language === 'ar' 
-                      ? 'وصف القطعة وتفاصيلها' 
-                      : 'Part description and details'}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Windows */}
+            <Card className="bg-card border-border overflow-hidden group hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
+              <div className="aspect-square relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1545259742-24f99d14561c?q=80&w=2070"
+                  alt="Caravan Windows"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">
+                  {language === 'ar' ? 'نوافذ الكرفان' : 'Caravan Windows'}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  {language === 'ar' 
+                    ? 'نوافذ عالية الجودة مع عزل حراري ممتاز' 
+                    : 'High quality windows with excellent thermal insulation'}
+                </p>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-background">
+                  {language === 'ar' ? 'طلب عرض سعر' : 'Request Quote'}
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Doors */}
+            <Card className="bg-card border-border overflow-hidden group hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
+              <div className="aspect-square relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?q=80&w=2070"
+                  alt="Caravan Doors"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">
+                  {language === 'ar' ? 'أبواب الكرفان' : 'Caravan Doors'}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  {language === 'ar' 
+                    ? 'أبواب متينة مع قفل أمان محكم' 
+                    : 'Durable doors with secure safety locks'}
+                </p>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-background">
+                  {language === 'ar' ? 'طلب عرض سعر' : 'Request Quote'}
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* AC Units */}
+            <Card className="bg-card border-border overflow-hidden group hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
+              <div className="aspect-square relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1585909695284-32d2985ac9c0?q=80&w=2070"
+                  alt="Air Conditioners"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">
+                  {language === 'ar' ? 'مكيفات الكرفان' : 'Caravan AC Units'}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  {language === 'ar' 
+                    ? 'مكيفات موفرة للطاقة ومناسبة للكرفانات' 
+                    : 'Energy-efficient air conditioners for caravans'}
+                </p>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-background">
+                  {language === 'ar' ? 'طلب عرض سعر' : 'Request Quote'}
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Electrical */}
+            <Card className="bg-card border-border overflow-hidden group hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
+              <div className="aspect-square relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2070"
+                  alt="Electrical Equipment"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">
+                  {language === 'ar' ? 'تجهيزات كهربائية' : 'Electrical Equipment'}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  {language === 'ar' 
+                    ? 'لوحات كهربائية وأسلاك عالية الجودة' 
+                    : 'Electrical panels and high-quality wiring'}
+                </p>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-background">
+                  {language === 'ar' ? 'طلب عرض سعر' : 'Request Quote'}
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Plumbing */}
+            <Card className="bg-card border-border overflow-hidden group hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
+              <div className="aspect-square relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?q=80&w=2070"
+                  alt="Plumbing Equipment"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">
+                  {language === 'ar' ? 'تجهيزات سباكة' : 'Plumbing Equipment'}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  {language === 'ar' 
+                    ? 'خزانات مياه ومضخات وصنابير' 
+                    : 'Water tanks, pumps and faucets'}
+                </p>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-background">
+                  {language === 'ar' ? 'طلب عرض سعر' : 'Request Quote'}
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Insulation */}
+            <Card className="bg-card border-border overflow-hidden group hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
+              <div className="aspect-square relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?q=80&w=2070"
+                  alt="Thermal Insulation"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">
+                  {language === 'ar' ? 'عازل حراري' : 'Thermal Insulation'}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  {language === 'ar' 
+                    ? 'مواد عزل حراري عالية الكفاءة' 
+                    : 'High-efficiency thermal insulation materials'}
+                </p>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-background">
+                  {language === 'ar' ? 'طلب عرض سعر' : 'Request Quote'}
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Tires */}
+            <Card className="bg-card border-border overflow-hidden group hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
+              <div className="aspect-square relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=2070"
+                  alt="Tires and Axles"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">
+                  {language === 'ar' ? 'إطارات ومحاور' : 'Tires and Axles'}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  {language === 'ar' 
+                    ? 'إطارات قوية ومحاور متينة للكرفانات' 
+                    : 'Strong tires and durable axles for caravans'}
+                </p>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-background">
+                  {language === 'ar' ? 'طلب عرض سعر' : 'Request Quote'}
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Furniture */}
+            <Card className="bg-card border-border overflow-hidden group hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
+              <div className="aspect-square relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070"
+                  alt="Interior Furniture"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">
+                  {language === 'ar' ? 'أثاث داخلي' : 'Interior Furniture'}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  {language === 'ar' 
+                    ? 'خزائن ورفوف ومقاعد مخصصة للكرفانات' 
+                    : 'Custom cabinets, shelves and seats'}
+                </p>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-background">
+                  {language === 'ar' ? 'طلب عرض سعر' : 'Request Quote'}
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* LED Lighting */}
+            <Card className="bg-card border-border overflow-hidden group hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
+              <div className="aspect-square relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=2070"
+                  alt="LED Lighting"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-2">
+                  {language === 'ar' ? 'إضاءة LED' : 'LED Lighting'}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  {language === 'ar' 
+                    ? 'أنظمة إضاءة LED موفرة للطاقة' 
+                    : 'Energy-saving LED lighting systems'}
+                </p>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-background">
+                  {language === 'ar' ? 'طلب عرض سعر' : 'Request Quote'}
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

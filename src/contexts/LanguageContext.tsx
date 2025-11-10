@@ -54,6 +54,7 @@ const translations = {
     getQuote: 'احصل على عرض سعر',
     learnMore: 'اعرف المزيد',
     viewAll: 'عرض الكل',
+    requestQuote: 'اطلب عرض سعر',
     
     // Projects
     projects: 'أعمالنا السابقة',
@@ -112,6 +113,7 @@ const translations = {
     getQuote: 'Get a Quote',
     learnMore: 'Learn More',
     viewAll: 'View All',
+    requestQuote: 'Request Quote',
     
     // Projects
     projects: 'Our Projects',

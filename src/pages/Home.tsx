@@ -33,11 +33,6 @@ const Home = () => {
                 {t('orderNew')}
               </Button>
             </Link>
-            <Link to="/maintenance">
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-background">
-                {t('requestMaintenance')}
-              </Button>
-            </Link>
           </div>
 
           {/* Quick Links Grid */}

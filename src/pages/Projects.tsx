@@ -7,51 +7,75 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      titleAr: 'كرفان سكني - الرياض',
-      titleEn: 'Residential Caravan - Riyadh',
-      descAr: 'كرفان سكني مجهز بالكامل مع غرفة نوم وحمام ومطبخ',
-      descEn: 'Fully equipped residential caravan with bedroom, bathroom and kitchen',
-      image: 'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070',
+      titleAr: 'كرفان سكني فاخر - الرياض',
+      titleEn: 'Luxury Residential Caravan - Riyadh',
+      descAr: 'كرفان سكني مجهز بالكامل مع غرفة نوم وحمام ومطبخ وصالة',
+      descEn: 'Fully equipped residential caravan with bedroom, bathroom, kitchen and living room',
+      image: 'https://images.unsplash.com/photo-1488805990569-3c9e1d76d1d6?q=80&w=2070',
     },
     {
       id: 2,
-      titleAr: 'كرفان مكتبي - جدة',
-      titleEn: 'Office Caravan - Jeddah',
-      descAr: 'كرفان مكتبي لموقع بناء مع تجهيزات كاملة',
-      descEn: 'Office caravan for construction site with complete equipment',
+      titleAr: 'كرفان مكتبي لموقع بناء - جدة',
+      titleEn: 'Office Caravan for Construction - Jeddah',
+      descAr: 'كرفان مكتبي مجهز بالكامل لإدارة موقع البناء',
+      descEn: 'Fully equipped office caravan for construction site management',
       image: 'https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=2070',
     },
     {
       id: 3,
-      titleAr: 'كرفان كافيه - دبي',
-      titleEn: 'Cafe Caravan - Dubai',
-      descAr: 'كرفان متحرك مجهز كمقهى متنقل',
-      descEn: 'Mobile caravan equipped as a mobile cafe',
-      image: 'https://images.unsplash.com/photo-1519167758481-83f29da8c3a5?q=80&w=2070',
+      titleAr: 'كرفان كافيه متنقل - دبي',
+      titleEn: 'Mobile Cafe Caravan - Dubai',
+      descAr: 'كرفان متحرك مجهز كمقهى متنقل بتجهيزات احترافية',
+      descEn: 'Mobile caravan equipped as a mobile cafe with professional equipment',
+      image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070',
     },
     {
       id: 4,
-      titleAr: 'كرفان عمال - الخبر',
-      titleEn: 'Workers Caravan - Khobar',
-      descAr: 'كرفان لإقامة العمال مع مرافق كاملة',
-      descEn: 'Workers accommodation caravan with complete facilities',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070',
+      titleAr: 'كرفان إقامة عمال - الخبر',
+      titleEn: 'Workers Accommodation - Khobar',
+      descAr: 'كرفان لإقامة العمال مع مرافق كاملة ومكيفات',
+      descEn: 'Workers accommodation caravan with complete facilities and air conditioning',
+      image: 'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?q=80&w=2070',
     },
     {
       id: 5,
-      titleAr: 'كرفان مطعم - أبوظبي',
-      titleEn: 'Restaurant Caravan - Abu Dhabi',
-      descAr: 'كرفان مطعم متنقل بتجهيزات احترافية',
-      descEn: 'Mobile restaurant caravan with professional equipment',
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070',
+      titleAr: 'كرفان مطعم فاخر - أبوظبي',
+      titleEn: 'Luxury Restaurant Caravan - Abu Dhabi',
+      descAr: 'كرفان مطعم متنقل بتجهيزات مطبخ احترافية كاملة',
+      descEn: 'Mobile restaurant caravan with complete professional kitchen equipment',
+      image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070',
     },
     {
       id: 6,
-      titleAr: 'كرفان حراسة - الدمام',
-      titleEn: 'Security Caravan - Dammam',
-      descAr: 'كرفان حراسة للمواقع والمشاريع',
-      descEn: 'Security caravan for sites and projects',
-      image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2070',
+      titleAr: 'كرفان حراسة مجهز - الدمام',
+      titleEn: 'Equipped Security Caravan - Dammam',
+      descAr: 'كرفان حراسة للمواقع مع أنظمة مراقبة',
+      descEn: 'Security caravan for sites with surveillance systems',
+      image: 'https://images.unsplash.com/photo-1504253163759-c23fccaebb55?q=80&w=2070',
+    },
+    {
+      id: 7,
+      titleAr: 'كرفان بوفيه - الشارقة',
+      titleEn: 'Buffet Caravan - Sharjah',
+      descAr: 'كرفان بوفيه متنقل مجهز لخدمة الطعام',
+      descEn: 'Mobile buffet caravan equipped for food service',
+      image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2070',
+    },
+    {
+      id: 8,
+      titleAr: 'كرفان طبي متنقل - المدينة',
+      titleEn: 'Mobile Medical Caravan - Medina',
+      descAr: 'كرفان مجهز لتقديم الخدمات الطبية',
+      descEn: 'Caravan equipped for providing medical services',
+      image: 'https://images.unsplash.com/photo-1519494140681-8b17d830a3ec?q=80&w=2070',
+    },
+    {
+      id: 9,
+      titleAr: 'كرفان مخيم فاخر - العين',
+      titleEn: 'Luxury Camp Caravan - Al Ain',
+      descAr: 'كرفان فاخر للتخييم مع تجهيزات راقية',
+      descEn: 'Luxury camping caravan with upscale equipment',
+      image: 'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?q=80&w=2070',
     },
   ];
 
@@ -74,12 +98,12 @@ const Projects = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <Card key={project.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <Card key={project.id} className="overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
                 <div className="relative h-64 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.titleAr}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 <CardContent className="p-6">
