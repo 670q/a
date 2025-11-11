@@ -26,17 +26,9 @@ const Home = () => {
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             {t('heroSubtitle')}
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Link to="/new-customer">
-              <Button size="lg" className="bg-gradient-gold text-background hover:opacity-90">
-                {t('orderNew')}
-              </Button>
-            </Link>
-          </div>
 
           {/* Quick Links */}
-          <div className="flex flex-wrap justify-center gap-6 md:gap-12 max-w-5xl mx-auto mt-16">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-12 max-w-5xl mx-auto mt-32">
             <Link to="/new-customer" className="group">
               <h3 className="text-base md:text-lg font-semibold text-foreground/90 hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
                 {t('newCaravan')}
