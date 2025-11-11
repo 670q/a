@@ -35,60 +35,42 @@ const Home = () => {
             </Link>
           </div>
 
-          {/* Quick Links Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto mt-16">
+          {/* Quick Links */}
+          <div className="flex flex-wrap justify-center gap-6 md:gap-12 max-w-5xl mx-auto mt-16">
             <Link to="/new-customer" className="group">
-              <div className="bg-surface/80 backdrop-blur-sm border border-border rounded-lg p-4 hover:border-primary transition-all hover:shadow-lg hover:-translate-y-1 duration-300">
-                <div className="text-3xl mb-2">🆕</div>
-                <h3 className="text-sm font-bold group-hover:text-primary transition-colors">
-                  {t('newCustomer')}
-                </h3>
-              </div>
-            </Link>
-
-            <Link to="/existing-customer" className="group">
-              <div className="bg-surface/80 backdrop-blur-sm border border-border rounded-lg p-4 hover:border-primary transition-all hover:shadow-lg hover:-translate-y-1 duration-300">
-                <div className="text-3xl mb-2">📋</div>
-                <h3 className="text-sm font-bold group-hover:text-primary transition-colors">
-                  {t('trackCaravan')}
-                </h3>
-              </div>
+              <h3 className="text-base md:text-lg font-semibold text-foreground/90 hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+                {t('newCustomer')}
+              </h3>
             </Link>
 
             <Link to="/projects" className="group">
-              <div className="bg-surface/80 backdrop-blur-sm border border-border rounded-lg p-4 hover:border-primary transition-all hover:shadow-lg hover:-translate-y-1 duration-300">
-                <div className="text-3xl mb-2">🏆</div>
-                <h3 className="text-sm font-bold group-hover:text-primary transition-colors">
-                  {t('projects')}
-                </h3>
-              </div>
+              <h3 className="text-base md:text-lg font-semibold text-foreground/90 hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+                {t('projects')}
+              </h3>
             </Link>
 
-            <Link to="/spare-parts" className="group">
-              <div className="bg-surface/80 backdrop-blur-sm border border-border rounded-lg p-4 hover:border-primary transition-all hover:shadow-lg hover:-translate-y-1 duration-300">
-                <div className="text-3xl mb-2">🔧</div>
-                <h3 className="text-sm font-bold group-hover:text-primary transition-colors">
-                  {t('spareParts')}
-                </h3>
-              </div>
+            <Link to="/existing-customer" className="group">
+              <h3 className="text-base md:text-lg font-semibold text-foreground/90 hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+                {t('existingCustomer')}
+              </h3>
+            </Link>
+
+            <Link to="/existing-customer" className="group">
+              <h3 className="text-base md:text-lg font-semibold text-foreground/90 hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+                {t('trackCaravan')}
+              </h3>
             </Link>
 
             <Link to="/maintenance" className="group">
-              <div className="bg-surface/80 backdrop-blur-sm border border-border rounded-lg p-4 hover:border-primary transition-all hover:shadow-lg hover:-translate-y-1 duration-300">
-                <div className="text-3xl mb-2">⚙️</div>
-                <h3 className="text-sm font-bold group-hover:text-primary transition-colors">
-                  {t('maintenance')}
-                </h3>
-              </div>
+              <h3 className="text-base md:text-lg font-semibold text-foreground/90 hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+                {t('maintenance')}
+              </h3>
             </Link>
 
-            <Link to="/contact" className="group">
-              <div className="bg-surface/80 backdrop-blur-sm border border-border rounded-lg p-4 hover:border-primary transition-all hover:shadow-lg hover:-translate-y-1 duration-300">
-                <div className="text-3xl mb-2">📞</div>
-                <h3 className="text-sm font-bold group-hover:text-primary transition-colors">
-                  {t('contact')}
-                </h3>
-              </div>
+            <Link to="/spare-parts" className="group">
+              <h3 className="text-base md:text-lg font-semibold text-foreground/90 hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+                {t('spareParts')}
+              </h3>
             </Link>
           </div>
         </div>
